@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)file:///C:/Users/tkpc_/Downloads/privacy.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Slick Dynamic Tech</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Arial, sans-serif; -webkit-font-smoothing: antialiased; background: #ffffff; color: #111827; overflow-x: hidden; }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #f1f5f9; }
+    ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+    .max-w { max-width: 800px; margin: 0 auto; padding: 0 40px; }
+    @media (max-width: 768px) { .max-w { padding: 0 20px; } }
+    html { scroll-behavior: smooth; }
+
+    /* ── HEADER ── */
+    #header { position: sticky; top: 0; left: 0; right: 0; z-index: 100; background: rgba(255,255,255,0.98); border-bottom: 1px solid #f1f5f9; backdrop-filter: blur(8px); }
+    .header-inner { max-width: 1200px; margin: 0 auto; padding: 0 40px; display: flex; align-items: center; justify-content: space-between; height: 56px; }
+    @media (max-width: 768px) { .header-inner { padding: 0 20px; } }
+    .logo { display: flex; align-items: center; gap: 8px; cursor: pointer; background: none; border: none; text-decoration: none; }
+    .logo-icon { width: 24px; height: 24px; border-radius: 5px; background: #2563eb; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .logo-text { font-size: 14px; font-weight: 700; color: #111827; letter-spacing: -.3px; }
+    .logo-text span { color: #3b82f6; }
+    .header-right { display: flex; align-items: center; gap: 14px; }
+    .back-link { display: flex; align-items: center; gap: 5px; font-size: 12.5px; font-weight: 600; color: #64748b; text-decoration: none; transition: color .2s; }
+    .back-link:hover { color: #2563eb; }
+    .lang-toggle { display: flex; align-items: center; border: 1px solid #e5e7eb; border-radius: 999px; padding: 3px; background: #f9fafb; }
+    .lang-btn { border: none; background: none; cursor: pointer; font-size: 11px; font-weight: 600; padding: 5px 12px; border-radius: 999px; transition: all .2s; color: #6b7280; }
+    .lang-btn.active { background: #2563eb; color: #fff; }
+
+    /* ── CONTENT ── */
+    #policy-content { padding: 56px 0 90px; }
+    .policy-eyebrow { font-size: 11px; font-weight: 700; color: #2563eb; text-transform: uppercase; letter-spacing: .1em; margin-bottom: 12px; }
+    .policy-title { font-size: clamp(26px, 4vw, 38px); font-weight: 800; color: #0f172a; letter-spacing: -.02em; margin-bottom: 10px; line-height: 1.15; }
+    .policy-updated { font-size: 12.5px; color: #94a3b8; margin-bottom: 44px; padding-bottom: 28px; border-bottom: 1px solid #e2e8f0; }
+    .policy-section { margin-bottom: 34px; }
+    .policy-section h2 { font-size: 17px; font-weight: 700; color: #0f172a; margin-bottom: 12px; letter-spacing: -.01em; }
+    .policy-section p { font-size: 14px; color: #475569; line-height: 1.75; margin-bottom: 12px; }
+    .policy-section p:last-child { margin-bottom: 0; }
+    .policy-section ul { margin: 12px 0 12px 0; padding-left: 20px; }
+    .policy-section li { font-size: 14px; color: #475569; line-height: 1.75; margin-bottom: 7px; }
+    .policy-section li:last-child { margin-bottom: 0; }
+    .policy-section strong { color: #1e293b; font-weight: 600; }
+    .policy-note { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 10px; padding: 16px 18px; font-size: 13px; color: #1e40af; line-height: 1.65; margin-top: 8px; }
+    .policy-contact-box { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 22px 24px; margin-top: 8px; }
+    .policy-contact-box p { margin-bottom: 6px; }
+    .policy-contact-box a { color: #2563eb; font-weight: 600; text-decoration: none; }
+    .policy-contact-box a:hover { color: #1d4ed8; }
+
+    /* Cantonese text spacing */
+    html[lang="zh-Hant"] .policy-section p,
+    html[lang="zh-Hant"] .policy-section li { line-height: 1.9; }
+
+    /* ── FOOTER ── */
+    #footer { background: #fff; border-top: 1px solid #f1f5f9; padding: 22px 0; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; padding: 0 40px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px; }
+    @media (max-width: 768px) { .footer-inner { padding: 0 20px; } }
+    .footer-logo { display: flex; align-items: center; gap: 7px; }
+    .footer-logo-icon { width: 20px; height: 20px; border-radius: 4px; background: #2563eb; display: flex; align-items: center; justify-content: center; }
+    .footer-logo-text { font-size: 12px; font-weight: 700; color: #374151; }
+    .footer-logo-text span { color: #3b82f6; }
+    .footer-links { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+    .footer-links a { font-size: 11.5px; color: #94a3b8; text-decoration: none; transition: color .2s; }
+    .footer-links a:hover { color: #2563eb; }
+    .footer-copy { font-size: 11px; color: #9ca3af; }
+</style>
+</head>
+<body>
+
+<header id="header">
+  <div class="header-inner">
+    <a class="logo" href="file:///C:/Users/tkpc_/Downloads/index.html">
+      <div class="logo-icon">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+      </div>
+      <span class="logo-text">Slick<span>Dynamic</span> Tech</span>
+    </a>
+    <div class="header-right">
+      <a class="back-link" href="file:///C:/Users/tkpc_/Downloads/index.html">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        <span data-t="backHome">Back to home</span>
+      </a>
+      <div class="lang-toggle">
+        <button class="lang-btn active" data-lang="en" onclick="setLang(&#39;en&#39;)">EN</button>
+        <button class="lang-btn" data-lang="zh" onclick="setLang(&#39;zh&#39;)">繁中</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="policy-content">
+  <div class="max-w">
+    <p class="policy-eyebrow" data-t="eyebrow">Legal</p>
+    <h1 class="policy-title" data-t="title">Privacy Policy</h1>
+    <p class="policy-updated" data-t="updated">Last updated: June 2026</p>
+    <div id="body-en">
+<div class="policy-section">
+  <h2>1. Introduction</h2>
+  <p>Slick Dynamic Tech ("we", "us", "our") provides website, AI automation and CRM services to businesses. This Privacy Policy explains what information we collect when you visit this website or contact us, how we use it, and what rights you have over it.</p>
+</div>
+
+<div class="policy-section">
+  <h2>2. Information We Collect</h2>
+  <p>We only collect information that you voluntarily provide to us through the contact form on this website, namely:</p>
+  <ul>
+    <li>Your full name</li>
+    <li>Your business email address</li>
+    <li>The service you are interested in</li>
+  </ul>
+  <p>We do not use cookies, analytics trackers, or any third-party scripts to monitor your behaviour on this website. We do not collect any information automatically beyond what is required for the website to function (e.g. standard server logs maintained by our hosting provider).</p>
+</div>
+
+<div class="policy-section">
+  <h2>3. How We Use Your Information</h2>
+  <p>We use the information you submit solely to:</p>
+  <ul>
+    <li>Respond to your enquiry and prepare a tailored proposal</li>
+    <li>Communicate with you about the services you have requested</li>
+    <li>Maintain records of our business relationship, where one is established</li>
+  </ul>
+  <p>We do not use your information for unrelated marketing purposes without your separate, explicit consent.</p>
+</div>
+
+<div class="policy-section">
+  <h2>4. Sharing of Information</h2>
+  <p>We do not sell, rent or trade your personal information to any third party. We may share limited information with the following categories of service providers, strictly for the purpose of delivering our services to you:</p>
+  <ul>
+    <li><strong>Payment processing:</strong> if you become a client, we use Stripe to issue invoices and process payments. Stripe receives only the information necessary to process your payment, in accordance with Stripe's own privacy policy.</li>
+    <li><strong>Communication tools:</strong> email or messaging platforms used to correspond with you directly.</li>
+  </ul>
+  <p>We will only disclose your information beyond these circumstances if required to do so by law.</p>
+</div>
+
+<div class="policy-section">
+  <h2>5. Data Retention</h2>
+  <p>We retain enquiry information for as long as is reasonably necessary to respond to you and, where a business relationship is established, for the duration of that relationship plus any period required by applicable tax or accounting regulations. You may request deletion of your information at any time, as described in Section 7 below.</p>
+</div>
+
+<div class="policy-section">
+  <h2>6. Data Security</h2>
+  <p>We take reasonable technical and organisational measures to protect your information against unauthorised access, alteration, disclosure or destruction. However, no method of electronic transmission or storage is 100% secure, and we cannot guarantee absolute security.</p>
+</div>
+
+<div class="policy-section">
+  <h2>7. Your Rights</h2>
+  <p>Depending on your jurisdiction, you may have the right to:</p>
+  <ul>
+    <li>Request access to the personal data we hold about you</li>
+    <li>Request correction of inaccurate data</li>
+    <li>Request deletion of your data</li>
+    <li>Withdraw consent to our processing of your data at any time</li>
+  </ul>
+  <p>To exercise any of these rights, please contact us using the details in Section 9 below.</p>
+</div>
+
+<div class="policy-section">
+  <h2>8. Changes to This Policy</h2>
+  <p>We may update this Privacy Policy from time to time to reflect changes in our practices or for legal, operational or regulatory reasons. The "last updated" date at the top of this page reflects the most recent revision.</p>
+</div>
+
+<div class="policy-section">
+  <h2>9. Contact Us</h2>
+  <div class="policy-contact-box">
+    <p>If you have any questions about this Privacy Policy or how we handle your information, please reach out via the contact form on our homepage.</p>
+  </div>
+</div>
+</div>
+  </div>
+</main>
+
+<footer id="footer">
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <div class="footer-logo-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg></div>
+      <span class="footer-logo-text">Slick<span>Dynamic</span> Tech</span>
+    </div>
+    <div class="footer-links">
+      <a href="file:///C:/Users/tkpc_/Downloads/privacy.html">Privacy Policy</a>
+      <a href="file:///C:/Users/tkpc_/Downloads/terms.html">Terms of Service</a>
+      <a href="file:///C:/Users/tkpc_/Downloads/refund.html">Refund &amp; Cancellation</a>
+    </div>
+    <p class="footer-copy">© 2026 Slick Dynamic Tech. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+const T = {
+  eyebrow: { en: "Legal", zh: "法律文件" },
+  title: { en: "Privacy Policy", zh: "私隱政策" },
+  updated: { en: "Last updated: June 2026", zh: "最後更新日期：2026年6月" },
+  backHome: { en: "Back to home", zh: "返回主頁" }
+};
+
+const BODY_ZH = `
+<div class="policy-section">
+  <h2>一、簡介</h2>
+  <p>Slick Dynamic Tech（以下簡稱「我們」）為企業提供網站建設、AI自動化及客戶管理系統（CRM）服務。本私隱政策旨在說明當閣下瀏覽本網站或與我們聯絡時，我們會收集哪些資料、如何使用該等資料，以及閣下就該等資料所享有的權利。</p>
+</div>
+
+<div class="policy-section">
+  <h2>二、我們收集的資料</h2>
+  <p>我們只會收集閣下透過本網站聯絡表格自願提供的資料，包括：</p>
+  <ul>
+    <li>閣下的全名</li>
+    <li>閣下的商業電郵地址</li>
+    <li>閣下感興趣的服務項目</li>
+  </ul>
+  <p>本網站不會使用任何Cookie、分析追蹤工具或第三方腳本監察閣下的瀏覽行為。除網站正常運作所必需的標準伺服器記錄（由我們的網站託管供應商保存）外，我們不會自動收集任何其他資料。</p>
+</div>
+
+<div class="policy-section">
+  <h2>三、資料用途</h2>
+  <p>我們收集閣下提交的資料，僅用於：</p>
+  <ul>
+    <li>回覆閣下的查詢並準備度身訂造的方案建議</li>
+    <li>就閣下要求的服務與閣下溝通</li>
+    <li>在建立業務關係後，保存相關業務往來記錄</li>
+  </ul>
+  <p>未經閣下另行明確同意，我們不會將閣下的資料用於無關的市場推廣用途。</p>
+</div>
+
+<div class="policy-section">
+  <h2>四、資料分享</h2>
+  <p>我們不會將閣下的個人資料出售、出租或轉讓予任何第三方。為向閣下提供服務，我們可能會與以下類別的服務供應商分享有限度的資料：</p>
+  <ul>
+    <li><strong>付款處理：</strong>若閣下成為我們的客戶，我們會使用 Stripe 開立發票及處理付款。Stripe 只會收到處理付款所必需的資料，並受 Stripe 自身的私隱政策約束。</li>
+    <li><strong>通訊工具：</strong>用於直接與閣下溝通的電郵或通訊平台。</li>
+  </ul>
+  <p>除上述情況外，除非法律另有規定，否則我們不會披露閣下的資料。</p>
+</div>
+
+<div class="policy-section">
+  <h2>五、資料保存期限</h2>
+  <p>我們會在合理需要的期間內保存查詢資料，以便回覆閣下；如雙方建立業務關係，則會在該關係存續期間及適用稅務或會計法規所要求的期限內保存有關資料。閣下可隨時要求刪除閣下的資料，詳見下文第七部分。</p>
+</div>
+
+<div class="policy-section">
+  <h2>六、資料保安</h2>
+  <p>我們採取合理的技術及組織措施，保障閣下的資料免受未經授權的查閱、更改、披露或銷毀。然而，任何電子傳輸或儲存方式均無法做到百分百安全，我們無法保證絕對的資料安全。</p>
+</div>
+
+<div class="policy-section">
+  <h2>七、閣下的權利</h2>
+  <p>視乎閣下所在司法管轄區，閣下可能有權：</p>
+  <ul>
+    <li>要求查閱我們持有關於閣下的個人資料</li>
+    <li>要求更正不準確的資料</li>
+    <li>要求刪除閣下的資料</li>
+    <li>隨時撤回對我們處理閣下資料的同意</li>
+  </ul>
+  <p>如欲行使上述任何權利，請透過下文第九部分所載方式與我們聯絡。</p>
+</div>
+
+<div class="policy-section">
+  <h2>八、政策修訂</h2>
+  <p>我們可能因應業務常規轉變，或基於法律、營運或監管理由，不時更新本私隱政策。本頁頂部所示的「最後更新日期」即為最近一次修訂的日期。</p>
+</div>
+
+<div class="policy-section">
+  <h2>九、聯絡我們</h2>
+  <div class="policy-contact-box">
+    <p>如閣下對本私隱政策或我們處理閣下資料的方式有任何疑問，歡迎透過我們主頁的聯絡表格與我們聯絡。</p>
+  </div>
+</div>
+`;
+const BODY_EN = document.getElementById('body-en').innerHTML;
+
+function setLang(l) {
+  document.querySelectorAll('[data-lang]').forEach(b => b.classList.toggle('active', b.getAttribute('data-lang') === l));
+  document.documentElement.lang = l === 'zh' ? 'zh-Hant' : 'en';
+  document.querySelectorAll('[data-t]').forEach(el => {
+    const k = el.getAttribute('data-t');
+    if (T[k] && T[k][l] !== undefined) el.textContent = T[k][l];
+  });
+  document.getElementById('body-en').innerHTML = (l === 'zh') ? BODY_ZH : BODY_EN;
+}
+</script>
+
+</body></html>

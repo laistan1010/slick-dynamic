@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)file:///C:/Users/tkpc_/Downloads/refund.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Refund &amp; Cancellation Policy — Slick Dynamic Tech</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Arial, sans-serif; -webkit-font-smoothing: antialiased; background: #ffffff; color: #111827; overflow-x: hidden; }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #f1f5f9; }
+    ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+    .max-w { max-width: 800px; margin: 0 auto; padding: 0 40px; }
+    @media (max-width: 768px) { .max-w { padding: 0 20px; } }
+    html { scroll-behavior: smooth; }
+
+    /* ── HEADER ── */
+    #header { position: sticky; top: 0; left: 0; right: 0; z-index: 100; background: rgba(255,255,255,0.98); border-bottom: 1px solid #f1f5f9; backdrop-filter: blur(8px); }
+    .header-inner { max-width: 1200px; margin: 0 auto; padding: 0 40px; display: flex; align-items: center; justify-content: space-between; height: 56px; }
+    @media (max-width: 768px) { .header-inner { padding: 0 20px; } }
+    .logo { display: flex; align-items: center; gap: 8px; cursor: pointer; background: none; border: none; text-decoration: none; }
+    .logo-icon { width: 24px; height: 24px; border-radius: 5px; background: #2563eb; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .logo-text { font-size: 14px; font-weight: 700; color: #111827; letter-spacing: -.3px; }
+    .logo-text span { color: #3b82f6; }
+    .header-right { display: flex; align-items: center; gap: 14px; }
+    .back-link { display: flex; align-items: center; gap: 5px; font-size: 12.5px; font-weight: 600; color: #64748b; text-decoration: none; transition: color .2s; }
+    .back-link:hover { color: #2563eb; }
+    .lang-toggle { display: flex; align-items: center; border: 1px solid #e5e7eb; border-radius: 999px; padding: 3px; background: #f9fafb; }
+    .lang-btn { border: none; background: none; cursor: pointer; font-size: 11px; font-weight: 600; padding: 5px 12px; border-radius: 999px; transition: all .2s; color: #6b7280; }
+    .lang-btn.active { background: #2563eb; color: #fff; }
+
+    /* ── CONTENT ── */
+    #policy-content { padding: 56px 0 90px; }
+    .policy-eyebrow { font-size: 11px; font-weight: 700; color: #2563eb; text-transform: uppercase; letter-spacing: .1em; margin-bottom: 12px; }
+    .policy-title { font-size: clamp(26px, 4vw, 38px); font-weight: 800; color: #0f172a; letter-spacing: -.02em; margin-bottom: 10px; line-height: 1.15; }
+    .policy-updated { font-size: 12.5px; color: #94a3b8; margin-bottom: 44px; padding-bottom: 28px; border-bottom: 1px solid #e2e8f0; }
+    .policy-section { margin-bottom: 34px; }
+    .policy-section h2 { font-size: 17px; font-weight: 700; color: #0f172a; margin-bottom: 12px; letter-spacing: -.01em; }
+    .policy-section p { font-size: 14px; color: #475569; line-height: 1.75; margin-bottom: 12px; }
+    .policy-section p:last-child { margin-bottom: 0; }
+    .policy-section ul { margin: 12px 0 12px 0; padding-left: 20px; }
+    .policy-section li { font-size: 14px; color: #475569; line-height: 1.75; margin-bottom: 7px; }
+    .policy-section li:last-child { margin-bottom: 0; }
+    .policy-section strong { color: #1e293b; font-weight: 600; }
+    .policy-note { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 10px; padding: 16px 18px; font-size: 13px; color: #1e40af; line-height: 1.65; margin-top: 8px; }
+    .policy-contact-box { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 22px 24px; margin-top: 8px; }
+    .policy-contact-box p { margin-bottom: 6px; }
+    .policy-contact-box a { color: #2563eb; font-weight: 600; text-decoration: none; }
+    .policy-contact-box a:hover { color: #1d4ed8; }
+
+    /* Cantonese text spacing */
+    html[lang="zh-Hant"] .policy-section p,
+    html[lang="zh-Hant"] .policy-section li { line-height: 1.9; }
+
+    /* ── FOOTER ── */
+    #footer { background: #fff; border-top: 1px solid #f1f5f9; padding: 22px 0; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; padding: 0 40px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px; }
+    @media (max-width: 768px) { .footer-inner { padding: 0 20px; } }
+    .footer-logo { display: flex; align-items: center; gap: 7px; }
+    .footer-logo-icon { width: 20px; height: 20px; border-radius: 4px; background: #2563eb; display: flex; align-items: center; justify-content: center; }
+    .footer-logo-text { font-size: 12px; font-weight: 700; color: #374151; }
+    .footer-logo-text span { color: #3b82f6; }
+    .footer-links { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+    .footer-links a { font-size: 11.5px; color: #94a3b8; text-decoration: none; transition: color .2s; }
+    .footer-links a:hover { color: #2563eb; }
+    .footer-copy { font-size: 11px; color: #9ca3af; }
+</style>
+</head>
+<body>
+
+<header id="header">
+  <div class="header-inner">
+    <a class="logo" href="file:///C:/Users/tkpc_/Downloads/index.html">
+      <div class="logo-icon">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+      </div>
+      <span class="logo-text">Slick<span>Dynamic</span> Tech</span>
+    </a>
+    <div class="header-right">
+      <a class="back-link" href="file:///C:/Users/tkpc_/Downloads/index.html">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        <span data-t="backHome">Back to home</span>
+      </a>
+      <div class="lang-toggle">
+        <button class="lang-btn active" data-lang="en" onclick="setLang(&#39;en&#39;)">EN</button>
+        <button class="lang-btn" data-lang="zh" onclick="setLang(&#39;zh&#39;)">繁中</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="policy-content">
+  <div class="max-w">
+    <p class="policy-eyebrow" data-t="eyebrow">Legal</p>
+    <h1 class="policy-title" data-t="title">Refund &amp; Cancellation Policy</h1>
+    <p class="policy-updated" data-t="updated">Last updated: June 2026</p>
+    <div id="body-en">
+<div class="policy-section">
+  <h2>1. Overview</h2>
+  <p>Because our services are custom-quoted and project-based rather than fixed-price products, refunds and cancellations are handled according to the stage of work completed. This policy explains how that works.</p>
+</div>
+
+<div class="policy-section">
+  <h2>2. Deposits</h2>
+  <p>Most projects require an upfront deposit (typically 30–50% of the total quoted price) before work begins. This deposit reserves project capacity and covers initial planning and setup work.</p>
+  <ul>
+    <li><strong>Before work has started:</strong> if you cancel before any work has commenced, your deposit is refundable in full, less any payment processing fees already incurred.</li>
+    <li><strong>After work has started:</strong> deposits become non-refundable once work has commenced, as they cover time and resources already committed to your project.</li>
+  </ul>
+</div>
+
+<div class="policy-section">
+  <h2>3. Mid-Project Cancellation</h2>
+  <p>If you wish to cancel a project that is already underway:</p>
+  <ul>
+    <li>You will be invoiced for all work completed up to the date of cancellation, calculated on a pro-rata or milestone basis as set out in your original proposal.</li>
+    <li>Any amount already paid beyond the value of completed work will be refunded within 14 business days.</li>
+    <li>Any amount owed for completed work beyond what has already been paid will be invoiced and is payable within 7 days.</li>
+  </ul>
+</div>
+
+<div class="policy-section">
+  <h2>4. Completed Work</h2>
+  <p>Once a deliverable has been completed, approved by you, and final payment has been made, that portion of the project is considered final and is not eligible for a refund, except where the deliverable does not match the agreed scope (see Section 6 below).</p>
+</div>
+
+<div class="policy-section">
+  <h2>5. Ongoing / Retainer Services</h2>
+  <p>For any ongoing monthly services (such as SEO management or AI agent maintenance), either party may cancel with 30 days' written notice. You will be billed for the final month of service up to the cancellation date; no further charges will apply after that date.</p>
+</div>
+
+<div class="policy-section">
+  <h2>6. Quality Disputes</h2>
+  <p>If you believe a delivered piece of work does not meet the scope agreed in your proposal, please contact us within 14 days of delivery. We will review the matter in good faith and, where we agree the work falls short of the agreed scope, we will either revise the work at no additional cost or issue a partial refund proportionate to the shortfall.</p>
+</div>
+
+<div class="policy-section">
+  <h2>7. How Refunds Are Issued</h2>
+  <p>All refunds are processed back to the original payment method via Stripe. Please allow up to 14 business days for the refund to appear, depending on your bank or card issuer's processing times.</p>
+</div>
+
+<div class="policy-section">
+  <h2>8. Contact Us</h2>
+  <div class="policy-contact-box">
+    <p>To request a cancellation or refund, please reach out via the contact form on our homepage with your name and project details, and we will respond within 2 business days.</p>
+  </div>
+</div>
+</div>
+  </div>
+</main>
+
+<footer id="footer">
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <div class="footer-logo-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg></div>
+      <span class="footer-logo-text">Slick<span>Dynamic</span> Tech</span>
+    </div>
+    <div class="footer-links">
+      <a href="file:///C:/Users/tkpc_/Downloads/privacy.html">Privacy Policy</a>
+      <a href="file:///C:/Users/tkpc_/Downloads/terms.html">Terms of Service</a>
+      <a href="file:///C:/Users/tkpc_/Downloads/refund.html">Refund &amp; Cancellation</a>
+    </div>
+    <p class="footer-copy">© 2026 Slick Dynamic Tech. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+const T = {
+  eyebrow: { en: "Legal", zh: "法律文件" },
+  title: { en: "Refund & Cancellation Policy", zh: "退款及取消政策" },
+  updated: { en: "Last updated: June 2026", zh: "最後更新日期：2026年6月" },
+  backHome: { en: "Back to home", zh: "返回主頁" }
+};
+
+const BODY_ZH = `
+<div class="policy-section">
+  <h2>一、概覽</h2>
+  <p>由於我們的服務按項目度身報價，而非劃一定價產品，退款及取消安排會根據工作已完成的階段而定。本政策旨在說明有關安排的具體運作方式。</p>
+</div>
+
+<div class="policy-section">
+  <h2>二、訂金</h2>
+  <p>大部分項目於開展工作前需要繳付訂金（一般為報價總額的30%至50%）。訂金用於預留項目檔期，並涵蓋初步規劃及設置工作。</p>
+  <ul>
+    <li><strong>工作開展前：</strong>若閣下在任何工作開展前取消項目，訂金可全數退還，惟須扣除已產生的付款處理費用。</li>
+    <li><strong>工作開展後：</strong>一旦工作已經開展，訂金即不可退還，因其已用於支付投放於閣下項目的時間及資源。</li>
+  </ul>
+</div>
+
+<div class="policy-section">
+  <h2>三、項目進行中取消</h2>
+  <p>若閣下希望取消一個已經開展的項目：</p>
+  <ul>
+    <li>我們會按原方案建議所列的比例或階段性收費基準，就截至取消日期已完成的所有工作向閣下開立發票。</li>
+    <li>已繳付但超出已完成工作價值的金額，將於14個工作天內退還。</li>
+    <li>已完成工作中超出閣下已付金額的部分，將另行開立發票，須於7天內繳付。</li>
+  </ul>
+</div>
+
+<div class="policy-section">
+  <h2>四、已完成的工作</h2>
+  <p>一旦交付項目經閣下確認完成並已繳付最終款項，該部分工作即視為最終結果，不設退款，惟若交付項目與協定範圍不符（見下文第六部分），則屬例外。</p>
+</div>
+
+<div class="policy-section">
+  <h2>五、持續性／月費服務</h2>
+  <p>就任何持續性的月費服務（例如SEO管理或AI代理維護），任何一方均可提前30天以書面通知終止服務。閣下須繳付截至取消日期當月的服務費用，其後將不會再有任何收費。</p>
+</div>
+
+<div class="policy-section">
+  <h2>六、品質爭議</h2>
+  <p>若閣下認為已交付的工作未能符合方案建議所協定的範圍，請於交付後14天內與我們聯絡。我們會本著誠意審視有關事宜，若確認工作未達協定範圍，我們將免費修改有關工作，或按落差比例發放部分退款。</p>
+</div>
+
+<div class="policy-section">
+  <h2>七、退款方式</h2>
+  <p>所有退款將透過Stripe退回原付款方式。視乎閣下銀行或發卡機構的處理時間，退款一般需時最多14個工作天方會到帳。</p>
+</div>
+
+<div class="policy-section">
+  <h2>八、聯絡我們</h2>
+  <div class="policy-contact-box">
+    <p>如欲申請取消或退款，請透過我們主頁的聯絡表格，連同閣下的姓名及項目資料與我們聯絡，我們將於2個工作天內回覆。</p>
+  </div>
+</div>
+`;
+const BODY_EN = document.getElementById('body-en').innerHTML;
+
+function setLang(l) {
+  document.querySelectorAll('[data-lang]').forEach(b => b.classList.toggle('active', b.getAttribute('data-lang') === l));
+  document.documentElement.lang = l === 'zh' ? 'zh-Hant' : 'en';
+  document.querySelectorAll('[data-t]').forEach(el => {
+    const k = el.getAttribute('data-t');
+    if (T[k] && T[k][l] !== undefined) el.textContent = T[k][l];
+  });
+  document.getElementById('body-en').innerHTML = (l === 'zh') ? BODY_ZH : BODY_EN;
+}
+</script>
+
+</body></html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)file:///C:/Users/tkpc_/Downloads/terms.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service — Slick Dynamic Tech</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Arial, sans-serif; -webkit-font-smoothing: antialiased; background: #ffffff; color: #111827; overflow-x: hidden; }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #f1f5f9; }
+    ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+    .max-w { max-width: 800px; margin: 0 auto; padding: 0 40px; }
+    @media (max-width: 768px) { .max-w { padding: 0 20px; } }
+    html { scroll-behavior: smooth; }
+
+    /* ── HEADER ── */
+    #header { position: sticky; top: 0; left: 0; right: 0; z-index: 100; background: rgba(255,255,255,0.98); border-bottom: 1px solid #f1f5f9; backdrop-filter: blur(8px); }
+    .header-inner { max-width: 1200px; margin: 0 auto; padding: 0 40px; display: flex; align-items: center; justify-content: space-between; height: 56px; }
+    @media (max-width: 768px) { .header-inner { padding: 0 20px; } }
+    .logo { display: flex; align-items: center; gap: 8px; cursor: pointer; background: none; border: none; text-decoration: none; }
+    .logo-icon { width: 24px; height: 24px; border-radius: 5px; background: #2563eb; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .logo-text { font-size: 14px; font-weight: 700; color: #111827; letter-spacing: -.3px; }
+    .logo-text span { color: #3b82f6; }
+    .header-right { display: flex; align-items: center; gap: 14px; }
+    .back-link { display: flex; align-items: center; gap: 5px; font-size: 12.5px; font-weight: 600; color: #64748b; text-decoration: none; transition: color .2s; }
+    .back-link:hover { color: #2563eb; }
+    .lang-toggle { display: flex; align-items: center; border: 1px solid #e5e7eb; border-radius: 999px; padding: 3px; background: #f9fafb; }
+    .lang-btn { border: none; background: none; cursor: pointer; font-size: 11px; font-weight: 600; padding: 5px 12px; border-radius: 999px; transition: all .2s; color: #6b7280; }
+    .lang-btn.active { background: #2563eb; color: #fff; }
+
+    /* ── CONTENT ── */
+    #policy-content { padding: 56px 0 90px; }
+    .policy-eyebrow { font-size: 11px; font-weight: 700; color: #2563eb; text-transform: uppercase; letter-spacing: .1em; margin-bottom: 12px; }
+    .policy-title { font-size: clamp(26px, 4vw, 38px); font-weight: 800; color: #0f172a; letter-spacing: -.02em; margin-bottom: 10px; line-height: 1.15; }
+    .policy-updated { font-size: 12.5px; color: #94a3b8; margin-bottom: 44px; padding-bottom: 28px; border-bottom: 1px solid #e2e8f0; }
+    .policy-section { margin-bottom: 34px; }
+    .policy-section h2 { font-size: 17px; font-weight: 700; color: #0f172a; margin-bottom: 12px; letter-spacing: -.01em; }
+    .policy-section p { font-size: 14px; color: #475569; line-height: 1.75; margin-bottom: 12px; }
+    .policy-section p:last-child { margin-bottom: 0; }
+    .policy-section ul { margin: 12px 0 12px 0; padding-left: 20px; }
+    .policy-section li { font-size: 14px; color: #475569; line-height: 1.75; margin-bottom: 7px; }
+    .policy-section li:last-child { margin-bottom: 0; }
+    .policy-section strong { color: #1e293b; font-weight: 600; }
+    .policy-note { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 10px; padding: 16px 18px; font-size: 13px; color: #1e40af; line-height: 1.65; margin-top: 8px; }
+    .policy-contact-box { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 22px 24px; margin-top: 8px; }
+    .policy-contact-box p { margin-bottom: 6px; }
+    .policy-contact-box a { color: #2563eb; font-weight: 600; text-decoration: none; }
+    .policy-contact-box a:hover { color: #1d4ed8; }
+
+    /* Cantonese text spacing */
+    html[lang="zh-Hant"] .policy-section p,
+    html[lang="zh-Hant"] .policy-section li { line-height: 1.9; }
+
+    /* ── FOOTER ── */
+    #footer { background: #fff; border-top: 1px solid #f1f5f9; padding: 22px 0; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; padding: 0 40px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px; }
+    @media (max-width: 768px) { .footer-inner { padding: 0 20px; } }
+    .footer-logo { display: flex; align-items: center; gap: 7px; }
+    .footer-logo-icon { width: 20px; height: 20px; border-radius: 4px; background: #2563eb; display: flex; align-items: center; justify-content: center; }
+    .footer-logo-text { font-size: 12px; font-weight: 700; color: #374151; }
+    .footer-logo-text span { color: #3b82f6; }
+    .footer-links { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+    .footer-links a { font-size: 11.5px; color: #94a3b8; text-decoration: none; transition: color .2s; }
+    .footer-links a:hover { color: #2563eb; }
+    .footer-copy { font-size: 11px; color: #9ca3af; }
+</style>
+</head>
+<body>
+
+<header id="header">
+  <div class="header-inner">
+    <a class="logo" href="file:///C:/Users/tkpc_/Downloads/index.html">
+      <div class="logo-icon">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+      </div>
+      <span class="logo-text">Slick<span>Dynamic</span> Tech</span>
+    </a>
+    <div class="header-right">
+      <a class="back-link" href="file:///C:/Users/tkpc_/Downloads/index.html">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        <span data-t="backHome">Back to home</span>
+      </a>
+      <div class="lang-toggle">
+        <button class="lang-btn active" data-lang="en" onclick="setLang(&#39;en&#39;)">EN</button>
+        <button class="lang-btn" data-lang="zh" onclick="setLang(&#39;zh&#39;)">繁中</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="policy-content">
+  <div class="max-w">
+    <p class="policy-eyebrow" data-t="eyebrow">Legal</p>
+    <h1 class="policy-title" data-t="title">Terms of Service</h1>
+    <p class="policy-updated" data-t="updated">Last updated: June 2026</p>
+    <div id="body-en">
+<div class="policy-section">
+  <h2>1. Acceptance of Terms</h2>
+  <p>These Terms of Service ("Terms") govern your use of this website and any services provided by Slick Dynamic Tech ("we", "us", "our"). By submitting an enquiry, accepting a quote, or engaging our services, you agree to be bound by these Terms.</p>
+  <div class="policy-note">Slick Dynamic Tech currently operates as a sole trader / business in formation. Full company registration details will be added here once incorporation is complete.</div>
+</div>
+
+<div class="policy-section">
+  <h2>2. Our Services</h2>
+  <p>We provide website design and development, AI automation (including AI chat agents), customer relationship management (CRM) implementation, search engine optimisation (SEO) and related digital services, as described on this website. The exact scope, deliverables and timeline of any engagement will be set out in a written quote or proposal agreed between you and us prior to commencement of work.</p>
+</div>
+
+<div class="policy-section">
+  <h2>3. Quotes &amp; Engagement Process</h2>
+  <p>As our services are customised to each client, pricing is not published on this website. After you submit an enquiry, we will respond with a tailored proposal. A project or engagement only begins once both parties have agreed on scope and price, typically confirmed in writing (including via email or an accepted Stripe quote/invoice).</p>
+</div>
+
+<div class="policy-section">
+  <h2>4. Payment Terms</h2>
+  <ul>
+    <li>Payments are processed securely via Stripe, using either an invoice or a payment link sent directly to you.</li>
+    <li>Unless otherwise agreed in writing, an initial deposit is payable before work commences, with the balance due upon completion or per the milestone schedule set out in your proposal.</li>
+    <li>All fees are quoted in the currency stated on your invoice and are exclusive of any applicable taxes unless stated otherwise.</li>
+    <li>Late payments may result in a pause of ongoing work until payment is received.</li>
+  </ul>
+</div>
+
+<div class="policy-section">
+  <h2>5. Client Responsibilities</h2>
+  <p>You agree to provide timely feedback, access, content and information reasonably required for us to deliver the agreed services. Delays caused by late client input may extend project timelines accordingly.</p>
+</div>
+
+<div class="policy-section">
+  <h2>6. Intellectual Property</h2>
+  <p>Upon full payment, ownership of custom deliverables created specifically for you (such as website code or design files) transfers to you, except for any pre-existing tools, frameworks, or proprietary systems we use to deliver the work, which remain our property and are licensed to you for your continued use of the deliverable.</p>
+</div>
+
+<div class="policy-section">
+  <h2>7. Confidentiality</h2>
+  <p>We treat any business, technical or customer information you share with us as confidential, and will not disclose it to third parties except as necessary to deliver the agreed services or as required by law.</p>
+</div>
+
+<div class="policy-section">
+  <h2>8. Limitation of Liability</h2>
+  <p>To the maximum extent permitted by law, our total liability arising out of or related to any engagement is limited to the amount paid by you for the services giving rise to the claim. We are not liable for indirect, incidental or consequential damages, including loss of revenue or business opportunity.</p>
+</div>
+
+<div class="policy-section">
+  <h2>9. Termination</h2>
+  <p>Either party may terminate an engagement in accordance with the cancellation terms set out in our <a href="file:///C:/Users/tkpc_/Downloads/refund.html" style="color:#2563eb;font-weight:600;text-decoration:none;">Refund &amp; Cancellation Policy</a>. Fees for work already completed remain payable.</p>
+</div>
+
+<div class="policy-section">
+  <h2>10. Governing Law</h2>
+  <p>These Terms are governed by the laws of the Hong Kong Special Administrative Region, without regard to conflict of law principles. Any disputes arising from these Terms will be subject to the non-exclusive jurisdiction of the Hong Kong courts.</p>
+</div>
+
+<div class="policy-section">
+  <h2>11. Contact Us</h2>
+  <div class="policy-contact-box">
+    <p>For any questions about these Terms, please reach out via the contact form on our homepage.</p>
+  </div>
+</div>
+</div>
+  </div>
+</main>
+
+<footer id="footer">
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <div class="footer-logo-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg></div>
+      <span class="footer-logo-text">Slick<span>Dynamic</span> Tech</span>
+    </div>
+    <div class="footer-links">
+      <a href="file:///C:/Users/tkpc_/Downloads/privacy.html">Privacy Policy</a>
+      <a href="file:///C:/Users/tkpc_/Downloads/terms.html">Terms of Service</a>
+      <a href="file:///C:/Users/tkpc_/Downloads/refund.html">Refund &amp; Cancellation</a>
+    </div>
+    <p class="footer-copy">© 2026 Slick Dynamic Tech. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+const T = {
+  eyebrow: { en: "Legal", zh: "法律文件" },
+  title: { en: "Terms of Service", zh: "服務條款" },
+  updated: { en: "Last updated: June 2026", zh: "最後更新日期：2026年6月" },
+  backHome: { en: "Back to home", zh: "返回主頁" }
+};
+
+const BODY_ZH = `
+<div class="policy-section">
+  <h2>一、條款接受</h2>
+  <p>本服務條款（「本條款」）規管閣下使用本網站及 Slick Dynamic Tech（「我們」）所提供任何服務的行為。閣下一旦提交查詢、接受報價或委託我們提供服務，即表示閣下同意受本條款約束。</p>
+  <div class="policy-note">Slick Dynamic Tech 現時以個體經營形式運作，公司註冊程序仍在進行中。完整公司註冊資料將於註冊成立後補充於此。</div>
+</div>
+
+<div class="policy-section">
+  <h2>二、我們提供的服務</h2>
+  <p>我們提供網站設計及開發、AI自動化（包括AI客服代理）、客戶管理系統（CRM）部署、搜尋引擎優化（SEO）及本網站所述的相關數碼服務。任何委託項目的具體範圍、交付項目及時間表，均會在開展工作前以書面報價或方案建議形式，經雙方協定後確立。</p>
+</div>
+
+<div class="policy-section">
+  <h2>三、報價及委託流程</h2>
+  <p>由於我們的服務按每位客戶的需要度身訂造，本網站不會公開列明價錢。閣下提交查詢後，我們會回覆一份度身訂造的方案建議。項目或委託僅於雙方就服務範圍及價錢達成協議後方告開始，協議一般會以書面形式確認（包括電郵或已接受的Stripe報價單／發票）。</p>
+</div>
+
+<div class="policy-section">
+  <h2>四、付款條款</h2>
+  <ul>
+    <li>所有付款均透過Stripe安全處理，方式為直接向閣下發送的發票或付款連結。</li>
+    <li>除非另有書面協議，否則開展工作前須繳付訂金，餘款則須於項目完成時或按方案建議所列的階段付款時間表繳付。</li>
+    <li>所有費用均以發票所列貨幣報價，除另有註明外，並不包括任何適用稅項。</li>
+    <li>逾期付款可能導致現有工作暫停，直至收到付款為止。</li>
+  </ul>
+</div>
+
+<div class="policy-section">
+  <h2>五、客戶責任</h2>
+  <p>閣下同意按合理時間提供我們交付服務所需的反饋、權限、內容及資料。如因客戶延遲提供資料而導致延誤，項目時間表將相應順延。</p>
+</div>
+
+<div class="policy-section">
+  <h2>六、知識產權</h2>
+  <p>於全數付款後，專為閣下訂造的交付項目（例如網站程式碼或設計檔案）的擁有權將轉移予閣下；惟我們用於交付工作的任何既有工具、框架或專有系統除外，該等項目仍屬我們所有，並授權予閣下作持續使用交付項目之用。</p>
+</div>
+
+<div class="policy-section">
+  <h2>七、保密責任</h2>
+  <p>我們會將閣下與我們分享的任何業務、技術或客戶資料視為機密資料，除非為交付協定服務所必需或法律另有規定，否則不會向第三方披露。</p>
+</div>
+
+<div class="policy-section">
+  <h2>八、責任限制</h2>
+  <p>在法律允許的最大範圍內，我們因任何委託而產生的全部責任，將限於閣下為引致申索的服務所支付的金額。我們對任何間接、附帶或衍生損失（包括收入或商業機會損失）概不負責。</p>
+</div>
+
+<div class="policy-section">
+  <h2>九、終止</h2>
+  <p>任何一方均可根據我們<a href="refund.html" style="color:#2563eb;font-weight:600;text-decoration:none;">退款及取消政策</a>所載的取消條款終止委託。已完成工作的費用仍須繳付。</p>
+</div>
+
+<div class="policy-section">
+  <h2>十、適用法律</h2>
+  <p>本條款受香港特別行政區法律管轄，不適用法律衝突原則。因本條款引起的任何爭議，均受香港法院非專屬司法管轄權管轄。</p>
+</div>
+
+<div class="policy-section">
+  <h2>十一、聯絡我們</h2>
+  <div class="policy-contact-box">
+    <p>如閣下對本條款有任何疑問，歡迎透過我們主頁的聯絡表格與我們聯絡。</p>
+  </div>
+</div>
+`;
+const BODY_EN = document.getElementById('body-en').innerHTML;
+
+function setLang(l) {
+  document.querySelectorAll('[data-lang]').forEach(b => b.classList.toggle('active', b.getAttribute('data-lang') === l));
+  document.documentElement.lang = l === 'zh' ? 'zh-Hant' : 'en';
+  document.querySelectorAll('[data-t]').forEach(el => {
+    const k = el.getAttribute('data-t');
+    if (T[k] && T[k][l] !== undefined) el.textContent = T[k][l];
+  });
+  document.getElementById('body-en').innerHTML = (l === 'zh') ? BODY_ZH : BODY_EN;
+}
+</script>
+
+</body></html>
