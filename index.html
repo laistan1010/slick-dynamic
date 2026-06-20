@@ -243,7 +243,7 @@
   <div class="max-w" style="width:100%">
     <div class="hero-inner">
       <div class="hero-left">
-        <div class="hero-eyebrow"><span data-t="hero.eyebrow">Enterprise Technology Partner</span></div>
+        <div class="hero-eyebrow"><span data-t="hero.eyebrow">SME Digital Transformation Partner</span></div>
         <h1 class="hero-h1" data-t-html="hero.h1">Smart Tech for <br><span style="color: #2b5bfa;">Growing Businesses.</span></h1>
         <p class="hero-tagline" data-t="hero.tagline">Slick Dynamic Tech partners with growth-driven companies to design, build and operate websites, AI agents and integrated CRM experiences that scale revenue and delight customers.</p>
         <button class="btn-primary" onclick="gotoContact()">
@@ -393,8 +393,7 @@
         <div class="form-bottom">
           <p class="form-privacy" data-t-html="form.privacy">By submitting you agree to our <a href="https://slickdynamic.com/privacy.html" style="color:#64748b;text-decoration:underline;">privacy policy</a>. We protect your data with industry-standard practices.</p>
           <div class="form-btns">
-            <button type="button" class="btn-outline" onclick="handleSubmit(event)" data-t="form.cta1">Request Proposal</button>
-            <button type="submit" class="btn-solid" data-t="form.cta2">Send &amp; Book Call</button>
+            <button type="button" class="btn-solid" onclick="handleSubmit(event)" data-t="form.cta1">Request Proposal</button>
           </div>
         </div>
         <p class="form-error" id="form-error" style="display:none;"></p>
@@ -426,7 +425,7 @@
 const T = {
   en: {
     "nav.cta":"Book Consultation","nav.services":"Services","nav.contact":"Contact",
-    "hero.eyebrow":"Enterprise Technology Partner",
+    "hero.eyebrow":"SME Digital Transformation Partner",
     "hero.h1":'Smart Tech for <span>Growing Businesses.</span>',
     "hero.tagline":"From websites to AI and CRMs, we design digital systems that do the heavy lifting so you can focus on driving sales.",
     "hero.cta":"Get Started — Free Audit",
@@ -452,7 +451,7 @@ const T = {
     "form.name":"Full Name","form.email":"Business Email","form.service":"Service Interested In",
     "form.selectPlaceholder":"Select a service",
     "form.privacy":"By submitting you agree to our <a href=\"privacy.html\" style=\"color:#64748b;text-decoration:underline;\">privacy policy</a>. We protect your data with industry-standard practices.",
-    "form.cta1":"Request Proposal","form.cta2":"Send & Book Call",
+    "form.cta1":"Request Proposal",
     "opt0":"Website Setup","opt2":"CRM System","opt3":"AI Chat & AI Agent","opt5":"Full Digital Transformation",
     "success.title":"Request Received!","success.sub":"Our team will reach out within 4 business hours.",
     "footer":"© 2026 Slick Dynamic Tech. All rights reserved.",
@@ -486,7 +485,7 @@ const T = {
     "form.name":"全名","form.email":"公司電郵","form.service":"感興趣的服務",
     "form.selectPlaceholder":"選擇服務",
     "form.privacy":"提交即表示您同意我們的<a href=\"privacy.html\" style=\"color:#64748b;text-decoration:underline;\">私隱政策</a>。我們以行業標準保護您的數據。",
-    "form.cta1":"申請方案","form.cta2":"發送並預約通話",
+    "form.cta1":"申請方案",
     "opt0":"網站設置","opt2":"CRM系統","opt3":"AI Chat & AI Agent","opt5":"全面數碼轉型",
     "success.title":"已收到您的申請！","success.sub":"我們的團隊將在4個工作小時內與您聯絡。",
     "footer":"© 2026 Slick Dynamic Tech。保留所有權利。",
@@ -562,8 +561,7 @@ async function handleSubmit(e) {
 
   // Record which CTA triggered the submission (useful in your Formspree inbox)
   document.getElementById('form-trigger').value =
-    (e.type === 'submit') ? (lang === 'zh' ? '發送並預約通話' : 'Send & Book Call')
-                           : (lang === 'zh' ? '申請方案' : 'Request Proposal');
+    (lang === 'zh' ? '申請方案' : 'Request Proposal');
 
   const buttons = form.querySelectorAll('button');
   buttons.forEach(b => b.disabled = true);
