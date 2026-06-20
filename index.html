@@ -79,11 +79,12 @@
     .btn-book:hover { background: #1d4ed8; }
     .btn-book:active { transform: scale(.97); }
     .hamburger { display: none; background: none; border: none; cursor: pointer; padding: 6px; color: #374151; }
+    .lang-toggle-mobile { display: none; }
     #mobile-nav { display: none; flex-direction: column; gap: 12px; padding: 20px; background: #fff; border-top: 1px solid #f3f4f6; box-shadow: 0 8px 24px rgba(0,0,0,.08); }
     #mobile-nav.open { display: flex; }
     .mobile-link { font-size: 14px; font-weight: 500; color: #374151; padding: 10px 0; border-bottom: 1px solid #f3f4f6; background: none; border-left: none; border-right: none; border-top: none; cursor: pointer; text-align: left; }
     .mobile-link:hover { color: #2563eb; }
-    @media (max-width: 640px) { .header-right .lang-toggle, .header-right .divider, .header-right .btn-book { display: none; } .hamburger { display: block; } }
+    @media (max-width: 640px) { .header-right .lang-toggle, .header-right .divider, .header-right .btn-book { display: none; } .hamburger { display: block; } .lang-toggle-mobile { display: flex; } }
 
     /* ── HERO ── */
     #hero { background: #fff; padding-top: 56px; min-height: 100vh; display: flex; align-items: center; }
@@ -220,6 +221,10 @@
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81 19.79 19.79 0 012 2.18 2 2 0 014 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"></path></svg>
           <span data-t="nav.cta">Book Consultation</span>
         </button>
+      </div>
+      <div class="lang-toggle lang-toggle-mobile">
+        <button class="lang-btn active" data-lang="en" onclick="setLang('en')">EN</button>
+        <button class="lang-btn" data-lang="zh" onclick="setLang('zh')">繁中</button>
       </div>
       <button class="hamburger" onclick="toggleMobile()">
         <svg id="ham-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
@@ -480,7 +485,7 @@ const T = {
     "s3.long1":"我們基於您的專有數據（產品目錄、支持文件、定價邏輯及公司知識）訓練並部署智能AI代理。您的代理可全天候篩選潛在客戶、預約通話、處理一線支持工單，並連同完整對話記錄移交複雜查詢。",
     "s3.features":["以您的產品、常見問題及品牌聲音進行定制訓練","潛在客戶資格審查及預約自動化","無需人工介入的一線支持工單處理","跨渠道多語言支持"],
     "learnMore":"了解更多",
-    "form.heading":"開始你的數碼轉型",
+    "form.heading":"開始您的數碼轉型",
     "form.subheading":"告訴我們您的優先事項，48小時內獲得量身定制的方案。無需承諾，無推銷。",
     "form.name":"全名","form.email":"公司電郵","form.service":"感興趣的服務",
     "form.selectPlaceholder":"選擇服務",
