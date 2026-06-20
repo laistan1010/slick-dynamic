@@ -69,10 +69,9 @@
     .section-eyebrow { font-size: 11px; font-weight: 700; color: #2563eb; text-transform: uppercase; letter-spacing: .1em; margin-bottom: 10px; }
     .section-title { font-size: clamp(22px, 3vw, 34px); font-weight: 800; color: #0f172a; letter-spacing: -.02em; margin-bottom: 10px; }
     .section-sub { font-size: 14px; color: #64748b; line-height: 1.6; max-width: 560px; margin-bottom: 40px; }
-    .services-grid-top { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 16px; }
-    .services-grid-bottom { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
-    @media (max-width: 900px) { .services-grid-top, .services-grid-bottom { grid-template-columns: 1fr; } }
-    @media (min-width: 640px) and (max-width: 900px) { .services-grid-top { grid-template-columns: repeat(2,1fr); } .services-grid-bottom { grid-template-columns: repeat(2,1fr); } }
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    @media (max-width: 900px) { .services-grid { grid-template-columns: 1fr; } }
+    @media (min-width: 640px) and (max-width: 900px) { .services-grid { grid-template-columns: repeat(2,1fr); } }
 
     .svc-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 14px; padding: 26px; transition: transform .25s, border-color .25s, box-shadow .25s; cursor: default; }
     .svc-card:hover { transform: translateY(-3px); border-color: #93c5fd; box-shadow: 0 8px 28px rgba(37,99,235,.10); }
@@ -224,10 +223,10 @@
 <section id="services">
   <div class="max-w">
     <p class="section-eyebrow" data-t="services.eyebrow">Core Services</p>
-    <h2 class="section-title" data-t="services.heading">Five Systems. One Competitive Advantage.</h2>
+    <h2 class="section-title" data-t="services.heading">Three Systems. One Competitive Advantage.</h2>
     <p class="section-sub" data-t="services.sub">Each service eliminates a specific operational bottleneck — engineered to compound your growth month over month.</p>
 
-    <div class="services-grid-top">
+    <div class="services-grid">
 
       <!-- Website Setup -->
       <div class="svc-card">
@@ -243,39 +242,13 @@
         <div class="svc-expand" id="s0">
           <p data-t="s0.long1">We begin with a strategic audit of your existing digital presence, identifying conversion leaks and missed revenue opportunities. Our team then designs and builds a site that doesn't just look premium — it performs.</p>
           <ul class="svc-feature-list" data-t-list="s0.features">
-            <li>Blazing-fast Core Web Vitals (LCP under 2.5s)</li>
-            <li>Mobile-first, fully responsive architecture</li>
+            <li>Fast-loading, mobile-first architecture</li>
+            <li>Fully responsive design across devices</li>
             <li>Conversion-rate-optimised layouts and CTAs</li>
-            <li>ADA / WCAG 2.1 accessibility compliance</li>
-            <li>Integrated analytics, heatmaps &amp; A/B testing</li>
-            <li>Seamless CMS integration (WordPress, Webflow, custom)</li>
+            <li>Accessibility-conscious design practices</li>
+            <li>Integrated analytics and tracking setup</li>
+            <li>CMS integration (WordPress, Webflow, custom)</li>
           </ul>
-          <span class="svc-tag" data-t="s0.timeline">Avg. time-to-launch: 4–6 weeks</span>
-        </div>
-      </div>
-
-      <!-- SEO -->
-      <div class="svc-card">
-        <div class="svc-icon-row">
-          <div class="svc-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
-          <div class="svc-title" data-t="s1.title">Comprehensive SEO Management</div>
-        </div>
-        <p class="svc-desc" data-t="s1.desc">Stop paying for traffic you should own. Full-funnel SEO strategy that compounds organic visibility month over month.</p>
-        <button class="svc-more-btn" onclick="toggleExpand('s1')">
-          <span data-t="learnMore">Learn more</span>
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-        </button>
-        <div class="svc-expand" id="s1">
-          <p data-t="s1.long1">Our full-funnel SEO programme covers every layer of organic growth. We benchmark against your top three competitors from day one and deliver monthly reporting with clear attribution to revenue — not just rankings.</p>
-          <ul class="svc-feature-list" data-t-list="s1.features">
-            <li>Deep technical audit: page speed, schema, crawlability</li>
-            <li>Keyword architecture mapped to buyer intent stages</li>
-            <li>Content strategy, creation and optimisation</li>
-            <li>Authority-building white-hat link campaigns</li>
-            <li>Monthly reporting tied to pipeline and revenue</li>
-            <li>Local SEO &amp; multilingual SEO available</li>
-          </ul>
-          <span class="svc-tag" data-t="s1.timeline">Avg. organic traffic uplift in 90 days: 40–180%</span>
         </div>
       </div>
 
@@ -293,20 +266,15 @@
         <div class="svc-expand" id="s2">
           <p data-t="s2.long1">We implement, migrate and automate your CRM — from data architecture to sales pipeline design and customer lifecycle automation. Post-deployment, management gains live pipeline visibility and no lead is ever lost again.</p>
           <ul class="svc-feature-list" data-t-list="s2.features">
-            <li>Supported: HubSpot, Salesforce, Zoho &amp; custom builds</li>
+            <li>度身打造CRM系統，從設定到上線一手包辦</li>
             <li>Sales pipeline design and lead scoring models</li>
             <li>Automated follow-up sequences and nurture flows</li>
             <li>Team onboarding and adoption training</li>
             <li>Real-time dashboard and reporting for management</li>
             <li>Integration with email, calendar and support tools</li>
           </ul>
-          <span class="svc-tag" data-t="s2.timeline">Typical sales cycle reduction: 35–55%</span>
         </div>
       </div>
-
-    </div>
-
-    <div class="services-grid-bottom">
 
       <!-- AI Chat -->
       <div class="svc-card">
@@ -325,36 +293,8 @@
             <li>Custom-trained on your products, FAQs and brand voice</li>
             <li>Lead qualification and appointment booking automation</li>
             <li>Tier-1 support resolution without human intervention</li>
-            <li>Seamless human handoff with full context preserved</li>
             <li>Multi-language support across all channels</li>
-            <li>Continuous learning and performance optimisation</li>
           </ul>
-          <span class="svc-tag" data-t="s3.timeline">Avg. cost-per-interaction reduction: 60–75% vs. human-only</span>
-        </div>
-      </div>
-
-      <!-- Meta -->
-      <div class="svc-card">
-        <div class="svc-icon-row">
-          <div class="svc-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div>
-          <div class="svc-title" data-t="s4.title">Meta Customer Service Integration</div>
-        </div>
-        <p class="svc-desc" data-t="s4.desc">Stop managing customer conversations in silos. Unified WhatsApp, Instagram and Messenger integration at enterprise scale.</p>
-        <button class="svc-more-btn" onclick="toggleExpand('s4')">
-          <span data-t="learnMore">Learn more</span>
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-        </button>
-        <div class="svc-expand" id="s4">
-          <p data-t="s4.long1">We unify your WhatsApp Business, Instagram DMs, Messenger and Facebook comments into a single AI-assisted inbox. Automated routing rules tag and prioritise conversations by intent, urgency and customer tier — so your team always focuses on the conversations that matter most.</p>
-          <ul class="svc-feature-list" data-t-list="s4.features">
-            <li>Unified inbox: WhatsApp, Instagram DMs, Messenger &amp; comments</li>
-            <li>Smart routing by intent, urgency and customer segment</li>
-            <li>Full customer history visible to agents in one view</li>
-            <li>Automated FAQ, order update and booking flows</li>
-            <li>Performance analytics: response time, resolution rate, CSAT</li>
-            <li>PDPO / GDPR compliant data handling</li>
-          </ul>
-          <span class="svc-tag" data-t="s4.timeline">Avg. first-response time: from hours to under 2 minutes</span>
         </div>
       </div>
 
@@ -445,33 +385,20 @@ const T = {
     "hero.cta":"Get Started — Free Audit",
     "hero.trust1":"No credit card required","hero.trust2":"Results in 30 days",
     "services.eyebrow":"Core Services",
-    "services.heading":"Five Systems. One Competitive Advantage.",
+    "services.heading":"Three Systems. One Competitive Advantage.",
     "services.sub":"Each service eliminates a specific operational bottleneck — engineered to compound your growth month over month.",
     "s0.title":"Website Setup",
     "s0.desc":"Stop losing leads to slow, outdated sites. We deploy conversion-optimised, lightning-fast websites that position your brand as the premium choice.",
     "s0.long1":"We begin with a strategic audit of your existing digital presence, identifying conversion leaks and missed revenue opportunities. Our team then designs and builds a site that doesn't just look premium — it performs.",
-    "s0.features":["Blazing-fast Core Web Vitals (LCP under 2.5s)","Mobile-first, fully responsive architecture","Conversion-rate-optimised layouts and CTAs","ADA / WCAG 2.1 accessibility compliance","Integrated analytics, heatmaps & A/B testing","Seamless CMS integration (WordPress, Webflow, custom)"],
-    "s0.timeline":"Avg. time-to-launch: 4–6 weeks",
-    "s1.title":"Comprehensive SEO Management",
-    "s1.desc":"Stop paying for traffic you should own. Full-funnel SEO strategy that compounds organic visibility month over month.",
-    "s1.long1":"Our full-funnel SEO programme covers every layer of organic growth. We benchmark against your top three competitors from day one and deliver monthly reporting with clear attribution to revenue — not just rankings.",
-    "s1.features":["Deep technical audit: page speed, schema, crawlability","Keyword architecture mapped to buyer intent stages","Content strategy, creation and optimisation","Authority-building white-hat link campaigns","Monthly reporting tied to pipeline and revenue","Local SEO & multilingual SEO available"],
-    "s1.timeline":"Avg. organic traffic uplift in 90 days: 40–180%",
+    "s0.features":["Fast-loading, mobile-first architecture","Fully responsive design across devices","Conversion-rate-optimised layouts and CTAs","Accessibility-conscious design practices","Integrated analytics and tracking setup","CMS integration (WordPress, Webflow, custom)"],
     "s2.title":"CRM System",
     "s2.desc":"Stop letting warm leads fall through the cracks. Bespoke CRM implementation that gives your team a single source of truth.",
     "s2.long1":"We implement, migrate and automate your CRM — from data architecture to sales pipeline design and customer lifecycle automation. Post-deployment, management gains live pipeline visibility and no lead is ever lost again.",
-    "s2.features":["Supported: HubSpot, Salesforce, Zoho & custom builds","Sales pipeline design and lead scoring models","Automated follow-up sequences and nurture flows","Team onboarding and adoption training","Real-time dashboard and reporting for management","Integration with email, calendar and support tools"],
-    "s2.timeline":"Typical sales cycle reduction: 35–55%",
+    "s2.features":["Bespoke CRM setup, from configuration to launch","Sales pipeline design and lead scoring models","Automated follow-up sequences and nurture flows","Team onboarding and adoption training","Real-time dashboard and reporting for management","Integration with email, calendar and support tools"],
     "s3.title":"AI Chat & AI Agent",
     "s3.desc":"Stop paying humans to answer the same 40 questions. Deploy intelligent AI agents trained on your business logic — available 24/7.",
     "s3.long1":"We train and deploy intelligent AI agents on your proprietary data — product catalogues, support docs, pricing logic and company knowledge. Your agents qualify leads, book discovery calls, resolve Tier-1 support tickets and hand off complex queries with full conversation context.",
-    "s3.features":["Custom-trained on your products, FAQs and brand voice","Lead qualification and appointment booking automation","Tier-1 support resolution without human intervention","Seamless human handoff with full context preserved","Multi-language support across all channels","Continuous learning and performance optimisation"],
-    "s3.timeline":"Avg. cost-per-interaction reduction: 60–75% vs. human-only",
-    "s4.title":"Meta Customer Service Integration",
-    "s4.desc":"Stop managing customer conversations in silos. Unified WhatsApp, Instagram and Messenger integration at enterprise scale.",
-    "s4.long1":"We unify your WhatsApp Business, Instagram DMs, Messenger and Facebook comments into a single AI-assisted inbox. Automated routing rules tag and prioritise conversations by intent, urgency and customer tier.",
-    "s4.features":["Unified inbox: WhatsApp, Instagram DMs, Messenger & comments","Smart routing by intent, urgency and customer segment","Full customer history visible to agents in one view","Automated FAQ, order update and booking flows","Performance analytics: response time, resolution rate, CSAT","PDPO / GDPR compliant data handling"],
-    "s4.timeline":"Avg. first-response time: from hours to under 2 minutes",
+    "s3.features":["Custom-trained on your products, FAQs and brand voice","Lead qualification and appointment booking automation","Tier-1 support resolution without human intervention","Multi-language support across all channels"],
     "learnMore":"Learn more",
     "form.heading":"Start Your Transformation",
     "form.subheading":"Tell us about your priorities and get a tailored proposal within 48 hours. No obligation. No sales pitch.",
@@ -492,33 +419,20 @@ const T = {
     "hero.cta":"立即開始——免費審核",
     "hero.trust1":"無需信用卡","hero.trust2":"30天內見效",
     "services.eyebrow":"核心服務",
-    "services.heading":"五大系統。一個競爭優勢。",
+    "services.heading":"三大系統。一個競爭優勢。",
     "services.sub":"每項服務針對特定業務瓶頸而設計，持續推動企業增長。",
     "s0.title":"網站設置",
     "s0.desc":"停止因網站緩慢過時而流失潛在客戶。我們部署以轉化率為核心的高速網站，在潛在客戶接觸銷售前已將您的品牌定位為首選。",
     "s0.long1":"我們從對您現有數碼業務的戰略審核開始，找出轉化漏洞和流失的收入機會。我們的團隊設計並建立的網站不僅外觀優質，更具備卓越的實際績效。",
-    "s0.features":["優異的Core Web Vitals分數（LCP低於2.5秒）","移動優先、完全響應式架構","轉化率優化的佈局與行動呼籲設計","ADA / WCAG 2.1無障礙合規","整合式數據分析、熱圖及A/B測試","無縫CMS整合（WordPress、Webflow、定制開發）"],
-    "s0.timeline":"平均上線時間：4至6週",
-    "s1.title":"綜合SEO管理",
-    "s1.desc":"停止為本應免費擁有的流量付費。全漏斗SEO策略，每月穩步提升自然流量能見度。",
-    "s1.long1":"我們的全漏斗SEO計劃涵蓋自然增長的每個層面。從第一天起就對您的前三名競爭對手進行基準測試，並每月提供與收入（而非僅排名）明確掛鉤的報告。",
-    "s1.features":["深度技術審核：頁面速度、結構化數據、可抓取性","按購買意圖階段規劃的關鍵詞架構","內容策略、創作與優化","白帽外鏈建設以提升網站權威","每月報告與業務管線及收入掛鉤","提供本地SEO及多語言SEO服務"],
-    "s1.timeline":"90天內平均自然流量提升：40%至180%",
+    "s0.features":["快速載入、移動優先架構","跨設備完全響應式設計","轉化率優化的佈局與行動呼籲設計","注重無障礙瀏覽的設計實踐","整合式數據分析及追蹤設置","CMS整合（WordPress、Webflow、定制開發）"],
     "s2.title":"CRM系統",
     "s2.desc":"停止讓溫熱潛在客戶從缺口流失。度身訂造的CRM部署，為您的團隊提供單一真相來源。",
     "s2.long1":"我們對您的CRM進行實施、遷移和自動化——從數據架構到銷售管線設計及客戶生命週期自動化。部署後，管理層獲得即時管線可見性，不再有任何潛在客戶流失。",
-    "s2.features":["支持平台：HubSpot、Salesforce、Zoho及定制開發","銷售管線設計與潛在客戶評分模型","自動化跟進序列及培育工作流程","團隊入職培訓及採用支持","管理層即時儀表板及報告","與電郵、日曆及支持工具整合"],
-    "s2.timeline":"典型銷售週期縮短：35%至55%",
+    "s2.features":["度身打造CRM系統，從設定到上線一手包辦","銷售管線設計與潛在客戶評分模型","自動化跟進序列及培育工作流程","團隊入職培訓及採用支持","管理層即時儀表板及報告","與電郵、日曆及支持工具整合"],
     "s3.title":"AI Chat & AI Agent",
     "s3.desc":"停止讓員工重複回答相同問題。部署以您業務邏輯訓練的智能AI代理——全天候24/7運行。",
     "s3.long1":"我們基於您的專有數據（產品目錄、支持文件、定價邏輯及公司知識）訓練並部署智能AI代理。您的代理可全天候篩選潛在客戶、預約通話、處理一線支持工單，並連同完整對話記錄移交複雜查詢。",
-    "s3.features":["以您的產品、常見問題及品牌聲音進行定制訓練","潛在客戶資格審查及預約自動化","無需人工介入的一線支持工單處理","保留完整對話記錄的無縫人工交接","跨渠道多語言支持","持續學習與效能優化"],
-    "s3.timeline":"平均每次互動成本降低：60%至75%（相比純人工支持）",
-    "s4.title":"Meta客服對接",
-    "s4.desc":"停止在各自孤立的渠道管理客戶對話。企業級統一WhatsApp、Instagram及Messenger整合。",
-    "s4.long1":"我們將您的WhatsApp Business、Instagram私信、Messenger及Facebook留言統一整合至單一智能收件箱。自動路由規則按意圖、緊急程度和客戶層級對對話進行標記和優先排序。",
-    "s4.features":["統一收件箱：WhatsApp、Instagram私信、Messenger及留言","按意圖、緊急程度及客戶細分進行智能路由","客服人員一目了然查看完整客戶歷史","自動化常見問題、訂單更新及預約流程","效能分析：響應時間、解決率、客戶滿意度","符合PDPO / GDPR的數據處理標準"],
-    "s4.timeline":"平均首次響應時間：從數小時縮短至2分鐘內",
+    "s3.features":["以您的產品、常見問題及品牌聲音進行定制訓練","潛在客戶資格審查及預約自動化","無需人工介入的一線支持工單處理","跨渠道多語言支持"],
     "learnMore":"了解更多",
     "form.heading":"開始您的數碼轉型",
     "form.subheading":"告訴我們您的優先事項，48小時內獲得量身定制的方案。無需承諾，無推銷。",
