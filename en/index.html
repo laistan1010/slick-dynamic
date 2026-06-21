@@ -197,8 +197,13 @@
     .hero-left > *:nth-child(5) { animation-delay: .35s; }
     .hero-right { animation: fadeUp .8s .1s ease both; }
   </style>
+  <link rel="preload" as="image" href="/images/hero.webp" fetchpriority="high">
 </head>
 <body>
+<svg style="display:none" aria-hidden="true">
+  <symbol id="icon-logo" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></symbol>
+  <symbol id="icon-arrow-right" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></symbol>
+</svg>
 
 <!-- HEADER -->
 <header id="header">
@@ -206,7 +211,7 @@
     <div class="header-inner">
       <button class="logo" onclick="window.scrollTo({top:0,behavior:&#39;smooth&#39;})">
         <div class="logo-icon">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-logo"></use></svg>
         </div>
         <span class="logo-text">Slick<span>Dynamic</span> Tech</span>
       </button>
@@ -241,7 +246,7 @@
         <p class="hero-tagline">From websites to AI and CRMs, we design digital systems that do the heavy lifting so you can focus on driving sales.</p>
         <button class="btn-primary" onclick="gotoContact()">
           <span>Get Started — Free Audit</span>
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-arrow-right"></use></svg>
         </button>
       </div>
       <div class="hero-right">
@@ -269,7 +274,7 @@
         <p class="svc-desc">A slow, dated site loses visitors in seconds. You get a fast, clean website that looks great on a phone and earns trust the moment someone lands on it.</p>
         <button class="svc-more-btn" onclick="toggleExpand(&#39;s0&#39;)">
           <span>Learn more</span>
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-arrow-right"></use></svg>
         </button>
         <div class="svc-expand" id="s0">
           <p>It starts by reviewing your current site (or social pages) to find where visitors drop off. Then you get a site that isn't just good-looking — it actually brings in business.</p>
@@ -292,7 +297,7 @@
         <p class="svc-desc">Interested customers leave their details, but follow-ups slip through the cracks? A CRM keeps every customer and their follow-up status in one place — so nobody gets forgotten.</p>
         <button class="svc-more-btn" onclick="toggleExpand(&#39;s1&#39;)">
           <span>Learn more</span>
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-arrow-right"></use></svg>
         </button>
         <div class="svc-expand" id="s1">
           <p>From building your customer database and designing the follow-up flow, to sending reminders and follow-up messages automatically — all handled. Once it's set up, you can see exactly where each customer stands, without relying on memory or scrolling through WhatsApp.</p>
@@ -316,7 +321,7 @@
         <p class="svc-desc">Answering the same question dozens of times a day? We set up an AI assistant trained on your own business info that replies to customers 24/7 — even after hours and while you sleep.</p>
         <button class="svc-more-btn" onclick="toggleExpand(&#39;s2&#39;)">
           <span>Learn more</span>
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-arrow-right"></use></svg>
         </button>
         <div class="svc-expand" id="s2">
           <p>Trained on your own information (product prices, FAQs, company details), the AI assistant can screen enquiries, book appointments and answer common questions. When something's too complex, it hands the full conversation back to you to take over.</p>
@@ -389,7 +394,7 @@
   <div class="max-w">
     <div class="footer-inner">
       <div class="footer-logo">
-        <div class="footer-logo-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg></div>
+        <div class="footer-logo-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-logo"></use></svg></div>
         <span class="footer-logo-text">Slick<span>Dynamic</span> Tech</span>
       </div>
       <div class="footer-links">

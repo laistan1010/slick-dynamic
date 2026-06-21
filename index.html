@@ -197,8 +197,13 @@
     .hero-left > *:nth-child(5) { animation-delay: .35s; }
     .hero-right { animation: fadeUp .8s .1s ease both; }
   </style>
+  <link rel="preload" as="image" href="/images/hero.webp" fetchpriority="high">
 </head>
 <body>
+<svg style="display:none" aria-hidden="true">
+  <symbol id="icon-logo" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></symbol>
+  <symbol id="icon-arrow-right" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></symbol>
+</svg>
 
 <!-- HEADER -->
 <header id="header">
@@ -206,7 +211,7 @@
     <div class="header-inner">
       <button class="logo" onclick="window.scrollTo({top:0,behavior:&#39;smooth&#39;})">
         <div class="logo-icon">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-logo"></use></svg>
         </div>
         <span class="logo-text">Slick<span>Dynamic</span> Tech</span>
       </button>
@@ -241,7 +246,7 @@
         <p class="hero-tagline">我們為你度身訂造專屬網站、智能客服及客戶管理系統，將每日重複的工作自動化，幫你節省時間、留住客戶，讓你與團隊可以專心做生意。</p>
         <button class="btn-primary" onclick="gotoContact()">
           <span>立即開始——免費審核</span>
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-arrow-right"></use></svg>
         </button>
       </div>
       <div class="hero-right">
@@ -269,7 +274,7 @@
         <p class="svc-desc">網站速度慢、款式過時，客人看兩眼就會離開。我們幫你建立一個快速、美觀、在手機上瀏覽舒適的網站，讓客人第一眼就留下好印象。</p>
         <button class="svc-more-btn" onclick="toggleExpand(&#39;s0&#39;)">
           <span>了解更多</span>
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-arrow-right"></use></svg>
         </button>
         <div class="svc-expand" id="s0">
           <p>我們由查看你現有網站（或社交專頁）開始，找出客人流失的地方，然後為你設置一個不僅美觀、更能真正帶來生意的網站。</p>
@@ -292,7 +297,7 @@
         <p class="svc-desc">有興趣的客人留下了資料，但回覆不及時或漏了follow up？CRM系統幫你將所有客人資料與跟進進度整合管理，不會有漏網之魚。</p>
         <button class="svc-more-btn" onclick="toggleExpand(&#39;s1&#39;)">
           <span>了解更多</span>
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-arrow-right"></use></svg>
         </button>
         <div class="svc-expand" id="s1">
           <p>從建立你的客戶資料庫、設計跟進流程，到自動發送提醒及跟進訊息，一手包辦。設置完成後，你隨時可以查看每位客人的跟進進度，不必再依賴記憶或翻查WhatsApp。</p>
@@ -316,7 +321,7 @@
         <p class="svc-desc">同一個問題每天要回答幾十次？我們幫你set up一個以你自己業務資料訓練的AI助手，24小時自動回覆客人，下班、睡覺時都能運作。</p>
         <button class="svc-more-btn" onclick="toggleExpand(&#39;s2&#39;)">
           <span>了解更多</span>
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-arrow-right"></use></svg>
         </button>
         <div class="svc-expand" id="s2">
           <p>用你自己的資料（菜單、常見問題、公司資訊）訓練一個AI助手，能夠幫你篩選客人、安排時間、回答一般查詢；遇到投訴或讚賞，會連同整段對話紀錄轉交給你跟進。</p>
@@ -388,7 +393,7 @@
   <div class="max-w">
     <div class="footer-inner">
       <div class="footer-logo">
-        <div class="footer-logo-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg></div>
+        <div class="footer-logo-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-logo"></use></svg></div>
         <span class="footer-logo-text">Slick<span>Dynamic</span> Tech</span>
       </div>
       <div class="footer-links">
